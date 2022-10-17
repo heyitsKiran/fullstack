@@ -2,20 +2,21 @@
 
 <head>
     <title></title>
-
+    <link rel="stylesheet" href="./one.css">
 </head>
 
 <body>
 
-    <h1 style="color: black;">Registration</h1>
+    <h1 style="color: black;" class="reg">Registration</h1>
 
     <form action="">
+        <p>
+            <label for="" class="qw">Name</label>
+            <input type="text" required>
 
-        <label for="">Name</label>
-        <input type="text" required>
-
-        <label for="">Mobile</label>
-        <input type="number" placeholder="10 digit mobile number" required>
+            <label for="" class="as">Mobile</label>
+            <input type="number" placeholder="10 digit mobile number" required>
+        </p>    
 
         <br /><br />
 
@@ -27,10 +28,10 @@
 
         <br /><br />
 
-        <label for="">City/District/Town</label>
+        <label for="" class="as">City/District/Town</label>
         <input type="text" required>
 
-        <label for="">State</label>
+        <label for="" class="qw">State</label>
         <select name="" id="" required>
 
             <option value="">Please Select</option>
@@ -53,9 +54,11 @@
 
         <br /><br />
 
-        <label for="">Address Type</label> <br />
-        <input type="radio" name="Address" id="Home">Home
-        <input type="radio" name="Address" id="Work">Work
+        <p>
+            <label for="">Address Type</label> <br />
+            <input type="radio" name="Address" id="Home">Home
+            <input type="radio" name="Address" id="Work">Work
+        </p>
 
         <br /><br />
 
@@ -64,7 +67,7 @@
         <input type="reset" name="" id="" value="Cancel">
 
     </form>
-
+    
 </body>
 
 </html>
