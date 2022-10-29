@@ -7,7 +7,7 @@ while (i <= 70) {
     if (i % 7 == 0) {
         console.log('divisible');
     } else {
-        console.log('Nt Divisibles');
+        console.log('Nt Divisible');
     }
     i = i + 1
 } 
