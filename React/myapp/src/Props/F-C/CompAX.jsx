@@ -7,11 +7,13 @@ let CompAX = () => {
     let mobile_Price = 29999
     let avalabilty = 'yes'
 
-    return (<div>
+    return (
 
-        <CompBX Name={mobile_Name} Price={mobile_Price} Status={avalabilty} />
+        <div>
 
-    </div>
+            <CompBX Name={mobile_Name} Price={mobile_Price} Status={avalabilty} />
+
+        </div>
 
     )
 }

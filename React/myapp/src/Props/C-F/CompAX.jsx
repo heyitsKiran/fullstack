@@ -3,22 +3,24 @@ import EDF from "./CompBX"
 
 class ABC extends Component {
 
-club_Name  = "BFC"
-club_position = 1
-club_League = "ISL"
+    club_Name = "BFC"
+    club_position = 1
+    club_League = "ISL"
 
-render (){ 
- return (
+    render() {
+        return (
 
-    <div>
+            <div>
 
-<EDF clubName = {this.club_Name} 
-clubPosition = {this.club_position} 
-clubLeague = {this.club_League} />
+                <EDF 
+                    clubName={this.club_Name}
+                    clubPosition={this.club_position}
+                    clubLeague={this.club_League} 
+                />
 
 
- </div>
-    )
-}
+            </div>
+        )
+    }
 }
 export default ABC

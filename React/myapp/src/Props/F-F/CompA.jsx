@@ -3,6 +3,7 @@ import CompB from './CompB'
 
 
 let CompA = () => {
+
     let fruit_Name = "Custard Apple"
     let fruit_Price = 120
     let fruit_Season = "Summer"
