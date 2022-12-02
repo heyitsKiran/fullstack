@@ -1,5 +1,5 @@
-import Kiran from "./State/three"
-//import Message1 from "./State/two"
+import Login from "./State/Login"
+//import Kiran from "./State/three"
 
 let App = () => {
 
@@ -8,7 +8,7 @@ let App = () => {
         <div>
 
             <hr />
-            <Kiran />
+            <Login />
             <hr />
 
 
