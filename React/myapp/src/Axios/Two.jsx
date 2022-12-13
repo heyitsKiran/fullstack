@@ -5,14 +5,14 @@ import Axios from "axios"
 
 class Two extends Component {
 
-    constructor(props) {
-        super(props)
+    //constructor(props) {
+    //    super(props)
 
-        this.state = {
-            user: []
+    state = {
+        user: []
 
-        }
     }
+
 
     componentDidMount() {
         Axios.get('https://jsonplaceholder.typicode.com/users')
@@ -22,14 +22,16 @@ class Two extends Component {
             .catch(() => { })
     }
 
-
     render() {
         return (
-            <div className="container mt-6">
-                <div className="row">
-                    <pre>{JSON.stringify(this.state.user)}</pre>
-                    <div className="col-md-6">
-                        <div>
+
+
+                    <div className="container mt-6">
+                        <div className="row">
+                            <pre>{JSON.stringify(this.state.user)}</pre>
+                            <div className="col-md-6">
+                                <div>
+
                             {
                                 this.state.user.length > 0 ? <>
 
@@ -40,6 +42,7 @@ class Two extends Component {
                                                 <th>ID</th>
                                                 <th>Name</th>
                                                 <th>Address</th>
+                                                <th>Phone Number</th>
                                             </tr>
 
                                         </thead>
@@ -48,9 +51,10 @@ class Two extends Component {
                                             {this.state.user.map((user) => {
                                                 return (
                                                     <tr>
-                                                        <td>{user.id}</td>
+                                                        <td >{user.id}</td>
                                                         <td>{user.name}</td>
                                                         <td>{user.address.city}</td>
+                                                        <td>{user.phone}</td>
                                                     </tr>)
                                             })}
 
@@ -60,6 +64,7 @@ class Two extends Component {
                                 </> : null
 
                             }
+
                         </div>
                     </div>
                 </div>
