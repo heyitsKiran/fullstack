@@ -46,7 +46,7 @@ class Contacts extends Component {
                                             {
                                                 this.state.user.map((user) => {
                                                     return <tr>
-                                                        <td> <i className="fa"></i> {user.id}</td>
+                                                        <td>{user.id}</td>
                                                         <td>{user.name}</td>
                                                         <td>{user.address.zipcode}</td>
                                                         <td>{user.phone}</td>
