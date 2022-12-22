@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Axios from 'axios'
 
-export class Gad_Axios extends Component {
+export class GadAxios extends Component {
     constructor(props) {
         super(props)
 
@@ -55,4 +55,4 @@ export class Gad_Axios extends Component {
     }
 }
 
-export default Gad_Axios
+export default GadAxios

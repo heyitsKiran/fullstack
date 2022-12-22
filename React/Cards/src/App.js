@@ -7,7 +7,12 @@ import Home from "./Pages/Home"
 import Clothing from "./Pages/Clothing"
 import Groceries from "./Pages/Groceries"
 import Time from "./Pages/Time"
-import Gad_Axios from "./Pages/Gad_Axios"
+import GadAxios from "./Pages/GadAxios"
+import Movies from "./Pages/Movies"
+import GadCarousel from "./Pages/GadCarousel"
+import MyCart from "./Pages/MyCart"
+import GadjetsFa from "./Pages/GadjetsFa"
+import Product from "./Pages/abc"
 
 let App = () => {
 
@@ -21,7 +26,12 @@ let App = () => {
                     <Route path="/clothing" element={<Clothing />}></Route>
                     <Route path="/groceries" element={<Groceries />}></Route>
                     <Route path="/time" element={<Time />}></Route>
-                    <Route path="/gad_axios" element={<Gad_Axios />}></Route>
+                    <Route path="/gadaxios" element={<GadAxios />}></Route>
+                    <Route path="/movies" element={<Movies />}></Route>
+                    <Route path="/gadcarousel" element={<GadCarousel />}></Route>
+                    <Route path="/mycart" element={<MyCart />}></Route>
+                    <Route path="/gadjetsfa" element={<GadjetsFa />}></Route>
+                    <Route path="/product" element={<Product />}></Route>
                 </Routes>
                 
                 
