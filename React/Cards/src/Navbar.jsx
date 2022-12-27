@@ -16,7 +16,6 @@ const Navbar = () => {
                     <li className='nav-item'><Link to="/time" className='nav-link'><h4>Time</h4></Link></li>
                     <li className='nav-item'><Link to="/movies" className='nav-link'><h4>Movies</h4></Link></li>
                     <li className='nav-item'><Link to="/mycart" className='nav-link'><h4>My Cart</h4></Link></li>
-                    <li className='nav-item'><Link to="/product" className='nav-link'><h4>Product</h4></Link></li>
                 </ul>
             </div>
         </nav>

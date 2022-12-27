@@ -33,7 +33,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import GadCarousel from "./GadCarousel"
-import GadjetsFa from "./GadjetsFa";
+import MyCart from "./MyCart";
 
 const Gadjets = () => {
 
@@ -47,12 +47,10 @@ const Gadjets = () => {
                     <div className="card " >
                         <div className="card-body bg-light">
                             <img src="https://m.media-amazon.com/images/I/617MPEZB5mL._AC_UY327_FMwebp_QL65_.jpg" alt="" />
-                            <h2 className="card-title">Oneplus Nord</h2>
-                            <h5 className="card-text">Oneplus Nord 256GB (Blue Variant)</h5>
+                            <hr />
+                            <div >
+                                <Link to="/MyCart" className="btn btn-primary" onClick={<MyCart />}>Add to Cart</Link>
 
-                            <Link to="/GadAxios" className="btn btn-primary">More...</Link>
-                            <div className="container ml-auto">
-                                <label><GadjetsFa /></label>
                             </div>
                         </div>
                     </div>
