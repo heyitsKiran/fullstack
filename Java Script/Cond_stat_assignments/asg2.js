@@ -1,4 +1,5 @@
 //  Check if number is multiple of 3 not not?
+
 let num1 = 6;
 let num2 = 5;
 
@@ -9,3 +10,4 @@ if //(num1 % 3 == 0)
 else {
     console.log("Not Divisible")
 }
+
