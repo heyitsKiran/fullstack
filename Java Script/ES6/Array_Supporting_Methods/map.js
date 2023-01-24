@@ -10,3 +10,4 @@ let new_arr = arr.map((arr_num) => {
 
 console.log(arr)
 console.log(new_arr)
+

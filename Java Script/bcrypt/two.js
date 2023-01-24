@@ -15,7 +15,7 @@ console.log(newPassword)
 player = { ...player, password: newPassword }
 console.log(player)
 
-if (bcrypt.compareSync("captaidleaderlegend", player.password,)) {
+if (bcrypt.compareSync("captainleaderlegend", player.password,)) {
     console.log("successful")
 } else {
     console.log("Un-Successfull")
