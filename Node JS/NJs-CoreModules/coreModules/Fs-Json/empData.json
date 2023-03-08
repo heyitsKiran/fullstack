@@ -1,0 +1,17 @@
+[
+    {
+        "name": "kiran",
+        "empId": 101,
+        "location": "bangalore"
+    },
+    {
+        "name": "ronaldo",
+        "empId": 7,
+        "location": "portugal"
+    },
+    {
+        "name": "messi",
+        "empId": 10,
+        "location": "argentina"
+    }
+]

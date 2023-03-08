@@ -1,0 +1,17 @@
+[
+    {
+        "club": "Bengaluru FC",
+        "place": "bangalore",
+        "state": "karnataka"
+    },
+    {
+        "club": "Kerala FC",
+        "place": "kochi",
+        "state": "kerala"
+    },
+    {
+        "club": "mumbai FC",
+        "place": "mumbai",
+        "state": "maharashtra"
+    }
+]
