@@ -74,4 +74,4 @@ const inputData = () => {
         setSuccess(password02)
     }
 
-}
+} 
