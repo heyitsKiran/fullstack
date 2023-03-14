@@ -47,6 +47,8 @@ const Gadjets = () => {
                     <div className="card " >
                         <div className="card-body bg-light">
                             <img src="https://m.media-amazon.com/images/I/617MPEZB5mL._AC_UY327_FMwebp_QL65_.jpg" alt="" />
+                            <h2>Oneplus Nord</h2>
+                            <h3>256GB Aqua Blue Variant</h3>
                             <hr />
                             <div >
                                 <Link to="/MyCart" className="btn btn-primary" onClick={<MyCart />}>Add to Cart</Link>

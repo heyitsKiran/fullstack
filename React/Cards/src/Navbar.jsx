@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
 
         <nav className='navbar navbar-dark bg-dark text-white navbar-expand-lg'>
-            <Link to="/home" className="navbar-brand"><h1>ProKart</h1></Link>
+            <Link to="/home" className="navbar-brand"><h1>Amazon</h1></Link>
 
             <div className='ml-auto'>
                 <ul className='navbar-nav'>

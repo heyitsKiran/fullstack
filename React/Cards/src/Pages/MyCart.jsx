@@ -16,9 +16,10 @@ class MyCart extends Component {
     this.setState({ Qty: this.state.Qty - 1 })
 
   }
+
   render() {
     return (
-      <div className=' col-md-6'>
+      <div className='mt-1 col-md-6'>
         <div className=''>
           <table className='container  table table-hover'>
             <thead className='bg-dark row-mt-12'>
@@ -44,7 +45,7 @@ class MyCart extends Component {
           </table>
 
           <div className='container'>
-            <button className='btn btn-primary'>Place Order</button>
+            <button className='btn btn-primary' >Place Order</button>
           </div>
 
         </div>
@@ -54,3 +55,12 @@ class MyCart extends Component {
 }
 
 export default MyCart
+
+
+//placeorder = () => {
+//  return (<div className="progress">
+//    <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+//  </div>
+//  )
+//}
+//onClick={this.placeorder}

@@ -6,6 +6,7 @@ import Players from "./Hey/Players"
 import Fixtures from "./Hey/Fixtures"
 import Tab from "./Hey/Tab"
 import Clock from "./Hey/Clock"
+import Login from "./Hey/Login"
 
 
 let App = () => {
@@ -21,6 +22,7 @@ let App = () => {
         <Route path="/fixtures" element={<Fixtures />}></Route>
         <Route path="/tab" element={<Tab />}></Route>
         <Route path="/clock" element={<Clock />}></Route>
+        <Route path="/login" element={<Login />}></Route>
       </Routes>
     </Router>
 

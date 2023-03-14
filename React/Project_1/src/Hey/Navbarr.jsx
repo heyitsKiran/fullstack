@@ -16,6 +16,7 @@ const Navbarr = () => {
           <li className='nav-item'><Link to="/fixtures" className='nav-link'><h1>Fixtures</h1></Link></li>
           <li className='nav-item'><Link to="/tab" className='nav-link'><h1>Tab</h1></Link></li>
           <li className='nav-item'><Link to="/clock" className='nav-link'><h1>Clock</h1></Link></li>
+          <li className='nav-item'><Link to="/login" className='nav-link'><h1>Login</h1></Link></li>
         </ul>
 
       </div>

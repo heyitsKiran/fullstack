@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, } from "react-router-dom"
 
 import Navbar from "./Navbar"
 import Gadjets from "./Pages/Gadjets"
@@ -29,10 +29,10 @@ let App = () => {
                     <Route path="/gadcarousel" element={<GadCarousel />}></Route>
                     <Route path="/mycart" element={<MyCart />}></Route>
                 </Routes>
-                
-                
-   
+         
             </Router>
+
+            
 
 
         </div>

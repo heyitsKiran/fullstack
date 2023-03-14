@@ -1,13 +1,11 @@
 import React from "react"
-//import Club from "./components/Club"
-//import Handle from "./EventHandling/Handle"
-import Login from "./State/ClassState/Login"
+import RegistrationView from "./Projects/Registration"
 
 let App = () => {
 
     return (
         <div>
-            <Login />
+            <RegistrationView />
         </div>
     )
 }

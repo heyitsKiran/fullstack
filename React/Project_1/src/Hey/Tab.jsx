@@ -70,7 +70,6 @@
 import React from "react"
 import { Component } from "react";
 import Axios from 'axios';
-import { Link } from "react-router-dom";
 
 class Tab extends Component {
 
