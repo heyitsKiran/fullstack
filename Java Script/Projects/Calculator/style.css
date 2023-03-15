@@ -7,12 +7,14 @@
     font-family: sans-serif;
     outline: none;
 }
+
 .container {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .calculator {
     background-color: #ecf0f3;
     padding: 15px;
@@ -22,6 +24,7 @@
     display: grid;
     grid-template-columns: repeat(4, 70px);
 }
+
 input {
     grid-column: span 4;
     height: 70px;
@@ -39,6 +42,7 @@ input {
     margin-bottom: 30px;
     padding: 20px;
 }
+
 button {
     height: 48px;
     width: 48px;
@@ -50,6 +54,7 @@ button {
     margin: 8px;
     font-size: 16px;
 }
+
 .equal {
     width: 115px;
     border-radius: 40px;
