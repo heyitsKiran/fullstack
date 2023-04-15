@@ -161,16 +161,40 @@
 // console.log(e1)
 // console.log(Employee)
 
-class Employee {
-  constructor(name, age, loc) {
-    this.name = name;
-    this.age = age;
-    this.loc = loc;
-  }
-}
-let e1 = new Employee("gokul", 27, "mambo");
-let e2 = new Employee("kiran", 28, "bangalore");
-let e3 = new Employee("kaushik", 88, "viveknagar");
-console.log(e1);
-console.log(e2);
-console.log(e3);
+// class Employee {
+//   constructor(name, company, location) {
+//     this.name = name;
+//     this.company = company;
+//     this.location = location;
+//   }
+// }
+
+// let e1 = new Employee("kiran", "google", "bengaluru");
+// let e2 = new Employee("sujith", "piano", "marathahalli");
+// let e3 = new Employee("kaushik", "girls", "girls");
+
+// console.log(e1, e2, e3);
+
+// class rcb{
+//   constructor(){
+//     console.log("ee sala cup namde")
+//   }
+// }
+// class csk extends rcb{
+//   constructor(){
+//     super()
+//     console.log("enada anga sathho ")
+//   }
+// }
+// new csk()
+
+// let arr = [51, 12, 78, 49, 58, 75, 42, 61, 21];
+
+// let ronaldo = arr.map((num) => {
+//   return num * 2;
+// });
+
+// console.log(ronaldo)
+
+// let [a, b, c, d, i] = arr;
+// console.log([a, b, c, d, i])
