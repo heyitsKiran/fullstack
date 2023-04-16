@@ -198,3 +198,13 @@
 
 // let [a, b, c, d, i] = arr;
 // console.log([a, b, c, d, i])
+
+// function confuse() {
+//   setInterval(() => {
+//     setTimeout(() => {
+//       console.log("vaa voi");
+//     }, 1000);
+//     console.log("hahhahahhaha");
+//   }, 1000);
+// }
+// confuse();
