@@ -208,3 +208,26 @@
 //   }, 1000);
 // }
 // confuse();
+
+// const fetch = require("fetch");
+
+// let url = "https://jsonplaceholder.typicode.com/users";
+// fetch(url)
+//   .then((res) => {
+//     return res.json();
+//   })
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((err) => {
+//     console.log(error);
+//   });
+
+async function kiran() {
+  return 1;
+}
+// kiran().then((abc) => {
+//   console.log(abc);
+// });
+const abc = await kiran()
+console.log(abc)
