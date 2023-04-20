@@ -1,0 +1,12 @@
+Props :-    helps to communicate b/w components.
+            it is a special keyword in react. 
+            it stands for properties.
+            data with props can be passed uni-directional.
+
+state :-    it contains the data/info about the component.
+            it is inbuilt react object.
+
+            Manage state :  class component & functional component
+
+            class component : ( this.state, this.setstate() )
+            functional component : react hooks
