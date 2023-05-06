@@ -1,11 +1,12 @@
 import React from "react";
-import Counter from "./Button/CompA";
+// import Registration from "./RegForm/CompA";
+import CompB from "./RegForm/CompB"
 
 let App = () => {
   return (
     <div>
-      <Counter />
+      <CompB />
     </div>
   );
 };
-export default App; 
+export default App;

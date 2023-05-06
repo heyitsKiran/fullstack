@@ -1,15 +1,11 @@
-import React from "react"
-import Content from "./Example3/Content"
-import Navbar from "./Navbar"
+import React from "react";
+import { Form } from "react-router-dom";
 
 let App = () => {
-
-    return (
-
-        <div>
-            <Navbar />
-            <Content />
-        </div>
-    )
-}
-export default App
+  return (
+    <div>
+      <Form />
+    </div>
+  );
+};
+export default App;

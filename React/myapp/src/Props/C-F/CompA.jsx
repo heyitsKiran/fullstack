@@ -9,14 +9,15 @@ class CompA extends Component {
 
     render() {
 
-        return (<div>
+        return (
+            <div>
 
-            <CompB
-                Name={this.product_Name}
-                Price={this.product_Price}
-                Status={this.product_Avalabilty}
-            />
-        </div>
+                <CompB
+                    Name={this.product_Name}
+                    Price={this.product_Price}
+                    Status={this.product_Avalabilty}
+                />
+            </div>
 
         )
 

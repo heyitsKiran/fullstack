@@ -64,13 +64,13 @@
 // getWeather().then(getWeatherIcon).then(onSuccess, onError);
 // console.log(getWeather());
 
-function Football() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve("bFC");
-    }, 2000);
-  });
-}
+// function Football() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("bFC");
+//     }, 2000);
+//   });
+// }
 
 function getTeams(Teams) {
   return new Promise((resolve, reject) => {
@@ -101,3 +101,19 @@ let onError = (error) => {
 
 Football().then(getTeams).then(onSuccess, onError);
 console.log(Football());
+
+// function getWeather() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       fetch(
+//         "https://api.openweathermap.org/data/2.5/weather?lat=12.9588&lon=77.6160&appid={API key}"
+//       ).then((response) => response.json().then((data) => resolve(data)));
+//     }, 2000);
+//   });
+// }
+
+// function displayData(weather) {
+//   console.log(weather);
+// }
+
+// getWeather().then(displayData);
