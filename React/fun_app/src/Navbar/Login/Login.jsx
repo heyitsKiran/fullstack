@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Login.css";
 
 const Login = () => {
@@ -6,6 +6,9 @@ const Login = () => {
     username: "",
     password: "",
   });
+
+  const [logErrors, setLogErrors] = useState({});
+  const [logSubmit, setLogSubmit] = useState(false);
 
   const updateHandler = (e) => {
     const { name, value } = e.target;
@@ -16,7 +19,26 @@ const Login = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(data);
+    setLogErrors(logValidate(data));
+    setLogSubmit(true);
+  };
+
+  useEffect(() => {
+    console.log(logErrors);
+    if (Object.keys(logErrors).length === 0 && logSubmit) {
+      console.log(data);
+    }
+  }, [logErrors]);
+
+  const logValidate = (values) => {
+    let errors = {};
+    if (!values.username) {
+      errors.username = "Please enter a Valid Username";
+    }
+    if (!values.password) {
+      errors.password = "Please enter a Valid Password";
+    }
+    return errors;
   };
 
   return (
@@ -33,6 +55,7 @@ const Login = () => {
             onChange={updateHandler}
           />
         </div>
+        <div className="text-danger">{logErrors.username}</div>
 
         {/* ****************** Password ****************************** */}
         <div className="input-group">
@@ -43,6 +66,7 @@ const Login = () => {
             id="password"
             onChange={updateHandler}
           />
+          <div className="text-danger">{logErrors.password}</div>
 
           {/* ****************** Forgot Password ****************************** */}
           <div className="forgot">
