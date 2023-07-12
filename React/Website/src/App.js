@@ -11,6 +11,7 @@ import GadAxios from "./Pages/GadAxios"
 import Movies from "./Pages/Movies"
 import GadCarousel from "./Pages/GadCarousel"
 import MyCart from "./Pages/MyCart"
+import Login from "./Pages/Login"
 
 let App = () => {
 
@@ -28,6 +29,7 @@ let App = () => {
                     <Route path="/movies" element={<Movies />}></Route>
                     <Route path="/gadcarousel" element={<GadCarousel />}></Route>
                     <Route path="/mycart" element={<MyCart />}></Route>
+                    <Route path="/login" element={<Login />}></Route>
                 </Routes>
          
             </Router>
