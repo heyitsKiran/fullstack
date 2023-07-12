@@ -34,25 +34,25 @@
 
 //*************************************************************************
 
-// function getWeatherIcon(weather) {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       switch (weather) {
-//         case "Sunny":
-//           resolve("hot as hell");
-//           break;
-//         case "rainy":
-//           resolve("pouring as hell");
-//           break;
-//         case "cloudy":
-//           resolve("dark as hell");
-//           break;
-//         default:
-//           reject("no weather voi");
-//       }
-//     }, 500);
-//   });
-// }
+function getWeatherIcon(weather) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      switch (weather) {
+        case "Sunny":
+          resolve("hot as hell");
+          break;
+        case "rainy":
+          resolve("pouring as hell");
+          break;
+        case "cloudy":
+          resolve("dark as hell");
+          break;
+        default:
+          reject("no weather voi");
+      }
+    }, 500);
+  });
+}
 
 // let onSuccess = (data) => {
 //   console.log("Success : ${data}");
@@ -61,8 +61,8 @@
 //   console.log("Success : ${Error}");
 // };
 
-// getWeather().then(getWeatherIcon).then(onSuccess, onError);
-// console.log(getWeather());
+getWeather().then(getWeatherIcon).then(onSuccess, onError);
+console.log(getWeather());
 
 // function Football() {
 //   return new Promise((resolve, reject) => {
@@ -72,35 +72,35 @@
 //   });
 // }
 
-function getTeams(Teams) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      switch (Teams) {
-        case "BFC":
-          resolve("Bengaluru FC");
-          break;
-        case "KBFC":
-          resolve("Kerala Blasters FC");
-          break;
-        case "MBSG":
-          resolve("Mohun Bagan Super Giants");
-          break;
-        default:
-          reject("no teams");
-      }
-    }, 1000);
-  });
-}
+// function getTeams(Teams) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       switch (Teams) {
+//         case "BFC":
+//           resolve("Bengaluru FC");
+//           break;
+//         case "KBFC":
+//           resolve("Kerala Blasters FC");
+//           break;
+//         case "MBSG":
+//           resolve("Mohun Bagan Super Giants");
+//           break;
+//         default:
+//           reject("no teams");
+//       }
+//     }, 1000);
+//   });
+// }
 
-let onSuccess = (data) => {
-  console.log("Success : ${data}");
-};
-let onError = (error) => {
-  console.log("Error : ${error}");
-};
+// let onSuccess = (data) => {
+//   console.log("Success : ${data}");
+// };
+// let onError = (error) => {
+//   console.log("Error : ${error}");
+// };
 
-Football().then(getTeams).then(onSuccess, onError);
-console.log(Football());
+// Football().then(getTeams).then(onSuccess, onError);
+// console.log(Football());
 
 // function getWeather() {
 //   return new Promise((resolve, reject) => {
@@ -117,3 +117,6 @@ console.log(Football());
 // }
 
 // getWeather().then(displayData);
+
+
+                                     
