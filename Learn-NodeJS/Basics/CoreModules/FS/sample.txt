@@ -1,0 +1,10 @@
+Server-side rendering (SSR) means that the server generates the complete HTML content of a web page and sends it to the client (usually a web browser). 
+The server executes the code, fetches data from databases or APIs, and generates the HTML with the data included. 
+The client receives the pre-rendered HTML and displays it to the user. This approach is often used in traditional web applications.
+
+Client-side rendering (CSR), on the other hand, means that the server sends a minimal HTML file to the client, usually containing the basic structure of the page and some JavaScript code.
+ The client's web browser then executes the JavaScript code, which fetches data from the server, manipulates the HTML structure, and renders the final content dynamically. 
+ This approach is often used in modern single-page applications (SPAs) and allows for a more interactive and dynamic user experience.   
+ This approach is often used in modern single-page applications (SPAs) and allows for a more interactive and dynamic user experience.   
+ This approach is often used in modern single-page applications (SPAs) and allows for a more interactive and dynamic user experience.   
+ This approach is often used in modern single-page applications (SPAs) and allows for a more interactive and dynamic user experience.   
