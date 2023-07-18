@@ -1,20 +1,25 @@
-//Create a HTTP - Server
+const express = require("express");
+let app = express();
 
-// const http = require("http");
+/* API URL : localhost:2000/signup
+Method : POST
+Fields : Email,Password
+Access Type : Public */
 
-// let server = http.createServer((req, resp) => {
-//   resp.end("Your response is here");
-// });
+app.post("/signup", (req, res) => {
+  res.send(`<h1>User Registered Successfully</h1>`);
+});
 
-// server.listen(7000, (err) => {
-//   if (err) throw err;
-//   console.log("Http Server is Running");
-// });
+/* API URL : localhost:2000/signup
+Method : GET
+Fields : Email,Password
+Access Type : Public */
 
-//Create using a single line
+app.get("/", (req, res) => {
+  res.send(`<h1>Hello World!</h1>`);
+});
 
-const http = require("http")
-  .createServer((req, resp) => {
-    resp.end(`<h1>Hello Voi</h1>`);
-  })
-  .listen(5000);
+app.listen(2000, (err) => {
+  if (err) throw err;
+  console.log("Server is running on port : 2000");
+});
