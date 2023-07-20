@@ -1,0 +1,17 @@
+How to Connect mongodb to the server
+
+mongoose.connect(URL)
+  .then((response)=>{
+      console.log("Connection Success")
+  })
+  .catch((err)=>{
+      if (err) throw err
+})
+
+mongoose.connect(URL)
+  .then((response)=>{
+      console.log("Connection Success")
+  })
+  .catch((process.env.MongoDB_Local)=>{
+      if (err) throw err
+})

@@ -1,25 +1,24 @@
 const express = require("express");
-let app = express();
+const dotenv = require("dotenv");
+const app = express();
 
-/* API URL : localhost:2000/signup
-Method : POST
-Fields : Email,Password
-Access Type : Public */
+dotenv.config({ path: "./config/config.env" });
 
-app.post("/signup", (req, res) => {
-  res.send(`<h1>User Registered Successfully</h1>`);
+app.get("/", (req, resp) => {
+  resp.send(`<h1>HEllo World</h1>`);
 });
 
-/* API URL : localhost:2000/signup
-Method : GET
-Fields : Email,Password
-Access Type : Public */
-
-app.get("/", (req, res) => {
-  res.send(`<h1>Hello World!</h1>`);
-});
-
-app.listen(2000, (err) => {
+app.listen(process.env.PORT, (err) => {
+    console.log(process.env.PORT)
   if (err) throw err;
-  console.log("Server is running on port : 2000");
+  console.log("Server is Running on port : 5000");
 });
+
+/* How to read Application Configuration env variables
+
+1. install - npm i dotenv
+2. create a config folder and a config file 
+3. import dotenv 
+4. provide congif path - ({path:"./config/config.env"})  
+
+*/
