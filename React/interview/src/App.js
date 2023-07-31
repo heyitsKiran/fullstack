@@ -1,9 +1,9 @@
-import Dropdown from "./Dropdown";
+import FetchClick from "./FetchClick";
 
 function App() {
   return (
     <div className="App">
-      <Dropdown />
+      <FetchClick />
     </div>
   );
 }
