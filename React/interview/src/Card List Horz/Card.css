@@ -1,0 +1,12 @@
+.card-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: calc(25% - 20px); /* Adjust the width as needed */
+  }
+  

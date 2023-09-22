@@ -1,9 +1,10 @@
-import FetchClick from "./FetchClick";
+import Login from "./Login";
+import One from "./One";
 
 function App() {
   return (
     <div className="App">
-      <FetchClick />
+      <One />
     </div>
   );
 }
