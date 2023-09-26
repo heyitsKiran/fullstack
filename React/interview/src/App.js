@@ -1,10 +1,9 @@
-import Login from "./Login";
-import One from "./One";
+import LoginForm from "./Registration Form/LoginForm";
 
 function App() {
   return (
     <div className="App">
-      <One />
+      <LoginForm />
     </div>
   );
 }
